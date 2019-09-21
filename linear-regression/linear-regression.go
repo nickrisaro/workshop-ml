@@ -1,6 +1,7 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
 	"image/color"
 	"log"
@@ -25,30 +26,32 @@ func main() {
 	}
 	defer advertFile.Close()
 
+	advertDF := dataframe.ReadCSV(advertFile)
+
 	switch os.Args[1] {
 
 	case "--desc":
-		describirDatos(advertFile)
+		describirDatos(advertDF)
 	case "--hist":
-		generarHistograma(advertFile)
+		generarHistograma(advertDF)
 	case "--disp":
-		generarDiagramaDeDispersion(advertFile)
+		generarDiagramaDeDispersion(advertDF)
+	case "--sets":
+		generarDatasets(advertDF)
 	default:
 		fmt.Println("No sé hacer lo que me pedís")
 	}
 
 }
 
-func describirDatos(advertFile *os.File) {
+func describirDatos(advertDF dataframe.DataFrame) {
 
-	advertDF := dataframe.ReadCSV(advertFile)
 	advertSummary := advertDF.Describe()
 
 	fmt.Println(advertSummary)
 }
 
-func generarHistograma(advertFile *os.File) {
-	advertDF := dataframe.ReadCSV(advertFile)
+func generarHistograma(advertDF dataframe.DataFrame) {
 
 	// Crea un histograma para cada columna del archivo
 	for _, colName := range advertDF.Names() {
@@ -78,9 +81,7 @@ func generarHistograma(advertFile *os.File) {
 	}
 }
 
-func generarDiagramaDeDispersion(advertFile *os.File) {
-
-	advertDF := dataframe.ReadCSV(advertFile)
+func generarDiagramaDeDispersion(advertDF dataframe.DataFrame) {
 
 	yVals := advertDF.Col("Sales").Float()
 
@@ -119,6 +120,46 @@ func generarDiagramaDeDispersion(advertFile *os.File) {
 func guardarGrafico(p *plot.Plot, nombre string) {
 
 	if err := p.Save(4*vg.Inch, 4*vg.Inch, nombre); err != nil {
+		log.Fatal(err)
+	}
+}
+
+func generarDatasets(advertDF dataframe.DataFrame) {
+
+	trainingNum := (4 * advertDF.Nrow()) / 5
+	testNum := advertDF.Nrow() / 5
+	if trainingNum+testNum < advertDF.Nrow() {
+		trainingNum++
+	}
+
+	trainingIdx := make([]int, trainingNum)
+	testIdx := make([]int, testNum)
+
+	for i := 0; i < trainingNum; i++ {
+		trainingIdx[i] = i
+	}
+
+	for i := 0; i < testNum; i++ {
+		testIdx[i] = trainingNum + i
+	}
+
+	trainingDF := advertDF.Subset(trainingIdx)
+	testDF := advertDF.Subset(testIdx)
+
+	guardarDataSet(trainingDF, "training.csv")
+	guardarDataSet(testDF, "test.csv")
+}
+
+func guardarDataSet(dataSet dataframe.DataFrame, nombreArchivo string) {
+
+	f, err := os.Create(nombreArchivo)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	w := bufio.NewWriter(f)
+
+	if err := dataSet.WriteCSV(w); err != nil {
 		log.Fatal(err)
 	}
 }
