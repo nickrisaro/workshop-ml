@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"image/color"
 	"log"
 	"os"
 
@@ -30,6 +31,8 @@ func main() {
 		describirDatos(advertFile)
 	case "--hist":
 		generarHistograma(advertFile)
+	case "--disp":
+		generarDiagramaDeDispersion(advertFile)
 	default:
 		fmt.Println("No sé hacer lo que me pedís")
 	}
@@ -70,8 +73,52 @@ func generarHistograma(advertFile *os.File) {
 
 		p.Add(h)
 
-		if err := p.Save(4*vg.Inch, 4*vg.Inch, colName+"_hist.png"); err != nil {
+		guardarGrafico(p, colName+"_hist.png")
+
+	}
+}
+
+func generarDiagramaDeDispersion(advertFile *os.File) {
+
+	advertDF := dataframe.ReadCSV(advertFile)
+
+	yVals := advertDF.Col("Sales").Float()
+
+	// Creamos un diagrama de dispersión entre las ventas y cada una de las otras columnas
+	for _, colName := range advertDF.Names() {
+
+		pts := make(plotter.XYs, advertDF.Nrow())
+
+		for i, floatVal := range advertDF.Col(colName).Float() {
+			pts[i].X = floatVal
+			pts[i].Y = yVals[i]
+		}
+
+		p, err := plot.New()
+		if err != nil {
 			log.Fatal(err)
 		}
+		p.X.Label.Text = colName
+		p.Y.Label.Text = "Sales"
+		p.Add(plotter.NewGrid())
+
+		s, err := plotter.NewScatter(pts)
+		if err != nil {
+			log.Fatal(err)
+		}
+		s.GlyphStyle.Color = color.RGBA{R: 255, B: 128, A: 255}
+		s.GlyphStyle.Radius = vg.Points(3)
+
+		p.Add(s)
+
+		guardarGrafico(p, colName+"_scatter.png")
+
+	}
+}
+
+func guardarGrafico(p *plot.Plot, nombre string) {
+
+	if err := p.Save(4*vg.Inch, 4*vg.Inch, nombre); err != nil {
+		log.Fatal(err)
 	}
 }
