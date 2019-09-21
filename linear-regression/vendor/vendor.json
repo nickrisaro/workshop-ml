@@ -1,0 +1,115 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "UVapj5IV+xkons/cOvYX5lWiJNI=",
+			"path": "github.com/go-gota/gota/series",
+			"revision": "7d8acfb8259f6135fb372d0966d9b6a23161c430",
+			"revisionTime": "2019-03-27T09:24:28Z"
+		},
+		{
+			"checksumSHA1": "asV4CB/o/EY0jKwKJQbJ7pOsdnY=",
+			"path": "github.com/kniren/gota/dataframe",
+			"revision": "7d8acfb8259f6135fb372d0966d9b6a23161c430",
+			"revisionTime": "2019-03-27T09:24:28Z"
+		},
+		{
+			"checksumSHA1": "9BVOgS89ZFcJzqtjii1k9qaCQ1g=",
+			"path": "gonum.org/v1/gonum/blas",
+			"revision": "16f41441268f3dab0269c341936d645ec725d07d",
+			"revisionTime": "2019-09-20T18:19:07Z"
+		},
+		{
+			"checksumSHA1": "aJikSHqnSEVXsffEAGxrTaBfiNA=",
+			"path": "gonum.org/v1/gonum/blas/blas64",
+			"revision": "16f41441268f3dab0269c341936d645ec725d07d",
+			"revisionTime": "2019-09-20T18:19:07Z"
+		},
+		{
+			"checksumSHA1": "sXEYtqiObmOZQz3H4bdsC+cSVMs=",
+			"path": "gonum.org/v1/gonum/blas/cblas128",
+			"revision": "16f41441268f3dab0269c341936d645ec725d07d",
+			"revisionTime": "2019-09-20T18:19:07Z"
+		},
+		{
+			"checksumSHA1": "12RnQKP7R44P6WKbU5ts7XdDK20=",
+			"path": "gonum.org/v1/gonum/blas/gonum",
+			"revision": "16f41441268f3dab0269c341936d645ec725d07d",
+			"revisionTime": "2019-09-20T18:19:07Z"
+		},
+		{
+			"checksumSHA1": "e0k8N1L2do/DCmFafkarnPD2JPo=",
+			"path": "gonum.org/v1/gonum/floats",
+			"revision": "16f41441268f3dab0269c341936d645ec725d07d",
+			"revisionTime": "2019-09-20T18:19:07Z"
+		},
+		{
+			"checksumSHA1": "FVBGdjX/25JopL6e6lH1PkmJHB0=",
+			"path": "gonum.org/v1/gonum/internal/asm/c128",
+			"revision": "16f41441268f3dab0269c341936d645ec725d07d",
+			"revisionTime": "2019-09-20T18:19:07Z"
+		},
+		{
+			"checksumSHA1": "7YcCgS7xz80xEZJT7SUmM0rcUH8=",
+			"path": "gonum.org/v1/gonum/internal/asm/c64",
+			"revision": "16f41441268f3dab0269c341936d645ec725d07d",
+			"revisionTime": "2019-09-20T18:19:07Z"
+		},
+		{
+			"checksumSHA1": "xt4fTJObqTomxQIF5aPj1QdfIj0=",
+			"path": "gonum.org/v1/gonum/internal/asm/f32",
+			"revision": "16f41441268f3dab0269c341936d645ec725d07d",
+			"revisionTime": "2019-09-20T18:19:07Z"
+		},
+		{
+			"checksumSHA1": "mpGTWB8cvKF6L39SdEZTsnS9c4Q=",
+			"path": "gonum.org/v1/gonum/internal/asm/f64",
+			"revision": "16f41441268f3dab0269c341936d645ec725d07d",
+			"revisionTime": "2019-09-20T18:19:07Z"
+		},
+		{
+			"checksumSHA1": "AUnqfg9uM3i1Psi2/T3DF8SHs5M=",
+			"path": "gonum.org/v1/gonum/internal/cmplx64",
+			"revision": "16f41441268f3dab0269c341936d645ec725d07d",
+			"revisionTime": "2019-09-20T18:19:07Z"
+		},
+		{
+			"checksumSHA1": "Gi7cwcjEebMyJBhYaFo96GQUDjc=",
+			"path": "gonum.org/v1/gonum/internal/math32",
+			"revision": "16f41441268f3dab0269c341936d645ec725d07d",
+			"revisionTime": "2019-09-20T18:19:07Z"
+		},
+		{
+			"checksumSHA1": "QBb/NCUK2Z9tdHf7yWNP0SYIcN8=",
+			"path": "gonum.org/v1/gonum/lapack",
+			"revision": "16f41441268f3dab0269c341936d645ec725d07d",
+			"revisionTime": "2019-09-20T18:19:07Z"
+		},
+		{
+			"checksumSHA1": "15y5NLh5AwHwYOLYDsuuWPsgR10=",
+			"path": "gonum.org/v1/gonum/lapack/gonum",
+			"revision": "16f41441268f3dab0269c341936d645ec725d07d",
+			"revisionTime": "2019-09-20T18:19:07Z"
+		},
+		{
+			"checksumSHA1": "BRJte/HC3K833VIEh+2TGp1MGsY=",
+			"path": "gonum.org/v1/gonum/lapack/lapack64",
+			"revision": "16f41441268f3dab0269c341936d645ec725d07d",
+			"revisionTime": "2019-09-20T18:19:07Z"
+		},
+		{
+			"checksumSHA1": "wJ5UOHqMd7OkOB1coMO6wPEnIyI=",
+			"path": "gonum.org/v1/gonum/mat",
+			"revision": "16f41441268f3dab0269c341936d645ec725d07d",
+			"revisionTime": "2019-09-20T18:19:07Z"
+		},
+		{
+			"checksumSHA1": "95rlsOOQMQP4NSJeZblEw9Pwb3M=",
+			"path": "gonum.org/v1/gonum/stat",
+			"revision": "16f41441268f3dab0269c341936d645ec725d07d",
+			"revisionTime": "2019-09-20T18:19:07Z"
+		}
+	],
+	"rootPath": "github.com/nickrisaro/workshop-ml/linear-regression"
+}
