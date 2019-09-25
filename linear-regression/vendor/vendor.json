@@ -45,6 +45,12 @@
 			"revisionTime": "2019-03-27T09:24:28Z"
 		},
 		{
+			"checksumSHA1": "qASpzxoutUJoPLk1HDdUprJ8h78=",
+			"path": "github.com/sajari/regression",
+			"revision": "866afa2c981c68576c1483917177099f715e5b6d",
+			"revisionTime": "2019-04-27T20:25:02Z"
+		},
+		{
 			"checksumSHA1": "xqrOmWhbb9HwHQaIlWVS+DxCkiI=",
 			"path": "golang.org/x/image/ccitt",
 			"revision": "69e4b8554b2a817a1f0015867f0858d02801f0f5",

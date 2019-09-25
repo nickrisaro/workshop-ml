@@ -2,12 +2,16 @@ package main
 
 import (
 	"bufio"
+	"encoding/csv"
 	"fmt"
 	"image/color"
 	"log"
+	"math"
 	"os"
+	"strconv"
 
 	"github.com/kniren/gota/dataframe"
+	"github.com/sajari/regression"
 	"gonum.org/v1/plot"
 	"gonum.org/v1/plot/plotter"
 	"gonum.org/v1/plot/vg"
@@ -38,6 +42,8 @@ func main() {
 		generarDiagramaDeDispersion(advertDF)
 	case "--sets":
 		generarDatasets(advertDF)
+	case "--train":
+		entrenar()
 	default:
 		fmt.Println("No sé hacer lo que me pedís")
 	}
@@ -162,4 +168,91 @@ func guardarDataSet(dataSet dataframe.DataFrame, nombreArchivo string) {
 	if err := dataSet.WriteCSV(w); err != nil {
 		log.Fatal(err)
 	}
+}
+
+func entrenar() {
+
+	f, err := os.Open("training.csv")
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer f.Close()
+
+	reader := csv.NewReader(f)
+
+	reader.FieldsPerRecord = 4
+	trainingData, err := reader.ReadAll()
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	// Vamos a generar un modelo con las ventas como variable dependiente
+	// y lo invertido en TV como variable dependiente
+	var r regression.Regression
+	r.SetObserved("Sales")
+	r.SetVar(0, "TV")
+
+	for i, record := range trainingData {
+
+		// Salteamos el header
+		if i == 0 {
+			continue
+		}
+
+		yVal, err := strconv.ParseFloat(record[3], 64)
+		if err != nil {
+			log.Fatal(err)
+		}
+
+		tvVal, err := strconv.ParseFloat(record[0], 64)
+		if err != nil {
+			log.Fatal(err)
+		}
+
+		r.Train(regression.DataPoint(yVal, []float64{tvVal}))
+	}
+
+	r.Run()
+
+	fmt.Printf("\nRegression Formula:\n%v\n\n", r.Formula)
+
+	f, err = os.Open("test.csv")
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer f.Close()
+
+	reader = csv.NewReader(f)
+
+	reader.FieldsPerRecord = 4
+	testData, err := reader.ReadAll()
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	var mAE float64
+	for i, record := range testData {
+
+		// Salteamos el header.
+		if i == 0 {
+			continue
+		}
+
+		yObserved, err := strconv.ParseFloat(record[3], 64)
+		if err != nil {
+			log.Fatal(err)
+		}
+
+		tvVal, err := strconv.ParseFloat(record[0], 64)
+		if err != nil {
+			log.Fatal(err)
+		}
+
+		// Predecimos y con nuestro modelo
+		yPredicted, err := r.Predict([]float64{tvVal})
+
+		mAE += math.Abs(yObserved-yPredicted) / float64(len(testData))
+	}
+
+	fmt.Printf("MAE = %0.2f\n\n", mAE)
 }
