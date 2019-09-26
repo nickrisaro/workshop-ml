@@ -1,0 +1,85 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "QDtk3cDCA8IMTAj3cdbXLiuEFGI=",
+			"path": "github.com/berkmancenter/ridge",
+			"revision": "84766bc56b56719027f3429cfd10c2574f213d5e",
+			"revisionTime": "2016-08-17T21:11:26Z"
+		},
+		{
+			"checksumSHA1": "5sNJJ42H7t1QnetGQrHbgyLvOYc=",
+			"path": "github.com/gonum/blas",
+			"revision": "f22b278b28ac9805aadd613a754a60c35b24ae69",
+			"revisionTime": "2018-12-08T21:30:49Z"
+		},
+		{
+			"checksumSHA1": "1bMmo7onihTQg+7AhTOmDo5C5pc=",
+			"path": "github.com/gonum/blas/blas64",
+			"revision": "f22b278b28ac9805aadd613a754a60c35b24ae69",
+			"revisionTime": "2018-12-08T21:30:49Z"
+		},
+		{
+			"checksumSHA1": "TlRNIwN3d1PNlYU6jXUAaPU7kMs=",
+			"path": "github.com/gonum/blas/native",
+			"revision": "f22b278b28ac9805aadd613a754a60c35b24ae69",
+			"revisionTime": "2018-12-08T21:30:49Z"
+		},
+		{
+			"checksumSHA1": "SNhPmRuf+8wXf7QVizNJI4lK8WY=",
+			"path": "github.com/gonum/blas/native/internal/math32",
+			"revision": "f22b278b28ac9805aadd613a754a60c35b24ae69",
+			"revisionTime": "2018-12-08T21:30:49Z"
+		},
+		{
+			"checksumSHA1": "ucRWNWnfKCtlGylxrEFadAgj7sc=",
+			"path": "github.com/gonum/floats",
+			"revision": "c233463c7e827fd71a8cdb62dfda0e98f7c39ad5",
+			"revisionTime": "2018-12-09T15:04:21Z"
+		},
+		{
+			"checksumSHA1": "IlLqjvUToGQ7oGLIF6P1Qz0Kyrs=",
+			"path": "github.com/gonum/internal/asm/f32",
+			"revision": "f884aa71402950fb2796dbea0d5aa9ef9cfad8ca",
+			"revisionTime": "2018-11-24T05:29:00Z"
+		},
+		{
+			"checksumSHA1": "O65b5jk5lgfXgKZ7HuhK56PMAdQ=",
+			"path": "github.com/gonum/internal/asm/f64",
+			"revision": "f884aa71402950fb2796dbea0d5aa9ef9cfad8ca",
+			"revisionTime": "2018-11-24T05:29:00Z"
+		},
+		{
+			"checksumSHA1": "mWOilwRtcMVF6ToKOYZ4B0w5qH0=",
+			"path": "github.com/gonum/lapack",
+			"revision": "e4cdc5a0bff924bb10be88482e635bd40429f65e",
+			"revisionTime": "2018-11-23T11:22:14Z"
+		},
+		{
+			"checksumSHA1": "8k/OY3CcQrQaVcI14ULJdn+uBuc=",
+			"path": "github.com/gonum/lapack/lapack64",
+			"revision": "e4cdc5a0bff924bb10be88482e635bd40429f65e",
+			"revisionTime": "2018-11-23T11:22:14Z"
+		},
+		{
+			"checksumSHA1": "Jjaa9cG3ZUCZ3fW6N6sAL8lwrg4=",
+			"path": "github.com/gonum/lapack/native",
+			"revision": "e4cdc5a0bff924bb10be88482e635bd40429f65e",
+			"revisionTime": "2018-11-23T11:22:14Z"
+		},
+		{
+			"checksumSHA1": "YMnEAf/fzfqUs4YLhA7CmH8WygI=",
+			"path": "github.com/gonum/matrix",
+			"revision": "c518dec07be9a636c38a4650e217be059b5952ec",
+			"revisionTime": "2018-12-09T21:31:04Z"
+		},
+		{
+			"checksumSHA1": "he+nbfhB5XJ1+dOzScqltQHICW0=",
+			"path": "github.com/gonum/matrix/mat64",
+			"revision": "c518dec07be9a636c38a4650e217be059b5952ec",
+			"revisionTime": "2018-12-09T21:31:04Z"
+		}
+	],
+	"rootPath": "github.com/nickrisaro/workshop-ml/non-linear-regression"
+}
