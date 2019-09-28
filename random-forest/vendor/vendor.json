@@ -1,0 +1,139 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "5sNJJ42H7t1QnetGQrHbgyLvOYc=",
+			"path": "github.com/gonum/blas",
+			"revision": "f22b278b28ac9805aadd613a754a60c35b24ae69",
+			"revisionTime": "2018-12-08T21:30:49Z"
+		},
+		{
+			"checksumSHA1": "UdZg0cgEl2zSKdfzSDFC2VZlgZQ=",
+			"path": "github.com/sjwhitworth/golearn/base",
+			"revision": "6fcc2b4ea533cbb81a5d8cdd8317c2a4269593e7",
+			"revisionTime": "2019-07-25T15:24:26Z"
+		},
+		{
+			"checksumSHA1": "CzHpkAjngfrOjMST71R0030smFM=",
+			"path": "github.com/sjwhitworth/golearn/ensemble",
+			"revision": "6fcc2b4ea533cbb81a5d8cdd8317c2a4269593e7",
+			"revisionTime": "2019-07-25T15:24:26Z"
+		},
+		{
+			"checksumSHA1": "IqY6jMOTF1XSeIv4hbfmWFdNvBc=",
+			"path": "github.com/sjwhitworth/golearn/evaluation",
+			"revision": "6fcc2b4ea533cbb81a5d8cdd8317c2a4269593e7",
+			"revisionTime": "2019-07-25T15:24:26Z"
+		},
+		{
+			"checksumSHA1": "rTp7q28nUvRAVztfALEYvTdaI8g=",
+			"path": "github.com/sjwhitworth/golearn/linear_models",
+			"revision": "6fcc2b4ea533cbb81a5d8cdd8317c2a4269593e7",
+			"revisionTime": "2019-07-25T15:24:26Z"
+		},
+		{
+			"checksumSHA1": "M5IZAIE2pDBthFRihM+IqFdJydE=",
+			"path": "github.com/sjwhitworth/golearn/meta",
+			"revision": "6fcc2b4ea533cbb81a5d8cdd8317c2a4269593e7",
+			"revisionTime": "2019-07-25T15:24:26Z"
+		},
+		{
+			"checksumSHA1": "IzerzWHmJjVrLqwImEcNwmWD7pI=",
+			"path": "github.com/sjwhitworth/golearn/trees",
+			"revision": "6fcc2b4ea533cbb81a5d8cdd8317c2a4269593e7",
+			"revisionTime": "2019-07-25T15:24:26Z"
+		},
+		{
+			"checksumSHA1": "9BVOgS89ZFcJzqtjii1k9qaCQ1g=",
+			"path": "gonum.org/v1/gonum/blas",
+			"revision": "94b2bbd8ac134cfae57eb9c818680fc674e28a1c",
+			"revisionTime": "2019-09-26T09:52:49Z"
+		},
+		{
+			"checksumSHA1": "aJikSHqnSEVXsffEAGxrTaBfiNA=",
+			"path": "gonum.org/v1/gonum/blas/blas64",
+			"revision": "94b2bbd8ac134cfae57eb9c818680fc674e28a1c",
+			"revisionTime": "2019-09-26T09:52:49Z"
+		},
+		{
+			"checksumSHA1": "sXEYtqiObmOZQz3H4bdsC+cSVMs=",
+			"path": "gonum.org/v1/gonum/blas/cblas128",
+			"revision": "94b2bbd8ac134cfae57eb9c818680fc674e28a1c",
+			"revisionTime": "2019-09-26T09:52:49Z"
+		},
+		{
+			"checksumSHA1": "12RnQKP7R44P6WKbU5ts7XdDK20=",
+			"path": "gonum.org/v1/gonum/blas/gonum",
+			"revision": "94b2bbd8ac134cfae57eb9c818680fc674e28a1c",
+			"revisionTime": "2019-09-26T09:52:49Z"
+		},
+		{
+			"checksumSHA1": "e0k8N1L2do/DCmFafkarnPD2JPo=",
+			"path": "gonum.org/v1/gonum/floats",
+			"revision": "94b2bbd8ac134cfae57eb9c818680fc674e28a1c",
+			"revisionTime": "2019-09-26T09:52:49Z"
+		},
+		{
+			"checksumSHA1": "FVBGdjX/25JopL6e6lH1PkmJHB0=",
+			"path": "gonum.org/v1/gonum/internal/asm/c128",
+			"revision": "94b2bbd8ac134cfae57eb9c818680fc674e28a1c",
+			"revisionTime": "2019-09-26T09:52:49Z"
+		},
+		{
+			"checksumSHA1": "7YcCgS7xz80xEZJT7SUmM0rcUH8=",
+			"path": "gonum.org/v1/gonum/internal/asm/c64",
+			"revision": "94b2bbd8ac134cfae57eb9c818680fc674e28a1c",
+			"revisionTime": "2019-09-26T09:52:49Z"
+		},
+		{
+			"checksumSHA1": "xt4fTJObqTomxQIF5aPj1QdfIj0=",
+			"path": "gonum.org/v1/gonum/internal/asm/f32",
+			"revision": "94b2bbd8ac134cfae57eb9c818680fc674e28a1c",
+			"revisionTime": "2019-09-26T09:52:49Z"
+		},
+		{
+			"checksumSHA1": "mpGTWB8cvKF6L39SdEZTsnS9c4Q=",
+			"path": "gonum.org/v1/gonum/internal/asm/f64",
+			"revision": "94b2bbd8ac134cfae57eb9c818680fc674e28a1c",
+			"revisionTime": "2019-09-26T09:52:49Z"
+		},
+		{
+			"checksumSHA1": "AUnqfg9uM3i1Psi2/T3DF8SHs5M=",
+			"path": "gonum.org/v1/gonum/internal/cmplx64",
+			"revision": "94b2bbd8ac134cfae57eb9c818680fc674e28a1c",
+			"revisionTime": "2019-09-26T09:52:49Z"
+		},
+		{
+			"checksumSHA1": "Gi7cwcjEebMyJBhYaFo96GQUDjc=",
+			"path": "gonum.org/v1/gonum/internal/math32",
+			"revision": "94b2bbd8ac134cfae57eb9c818680fc674e28a1c",
+			"revisionTime": "2019-09-26T09:52:49Z"
+		},
+		{
+			"checksumSHA1": "QBb/NCUK2Z9tdHf7yWNP0SYIcN8=",
+			"path": "gonum.org/v1/gonum/lapack",
+			"revision": "94b2bbd8ac134cfae57eb9c818680fc674e28a1c",
+			"revisionTime": "2019-09-26T09:52:49Z"
+		},
+		{
+			"checksumSHA1": "15y5NLh5AwHwYOLYDsuuWPsgR10=",
+			"path": "gonum.org/v1/gonum/lapack/gonum",
+			"revision": "94b2bbd8ac134cfae57eb9c818680fc674e28a1c",
+			"revisionTime": "2019-09-26T09:52:49Z"
+		},
+		{
+			"checksumSHA1": "BRJte/HC3K833VIEh+2TGp1MGsY=",
+			"path": "gonum.org/v1/gonum/lapack/lapack64",
+			"revision": "94b2bbd8ac134cfae57eb9c818680fc674e28a1c",
+			"revisionTime": "2019-09-26T09:52:49Z"
+		},
+		{
+			"checksumSHA1": "vFy1GqTy0Eg2yN16ufcd9LaQ56k=",
+			"path": "gonum.org/v1/gonum/mat",
+			"revision": "94b2bbd8ac134cfae57eb9c818680fc674e28a1c",
+			"revisionTime": "2019-09-26T09:52:49Z"
+		}
+	],
+	"rootPath": "github.com/nickrisaro/workshop-ml/random-forest"
+}
