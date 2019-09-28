@@ -1,0 +1,97 @@
+{
+	"comment": "",
+	"ignore": "",
+	"package": [
+		{
+			"checksumSHA1": "KDhyBgDyvzsC2UP9fziSJB6qkms=",
+			"path": "github.com/cdipaolo/goml/base",
+			"revision": "e1f51f7135988cf33ef5feafa6d1558e4f28d981",
+			"revisionTime": "2019-04-12T18:04:03Z"
+		},
+		{
+			"checksumSHA1": "J3i31RL0+RGcRymPplDExeSz0o0=",
+			"path": "github.com/cdipaolo/goml/cluster",
+			"revision": "e1f51f7135988cf33ef5feafa6d1558e4f28d981",
+			"revisionTime": "2019-04-12T18:04:03Z"
+		},
+		{
+			"checksumSHA1": "3KhDEC5MM0iyN+FsLfxpnvFVeuY=",
+			"path": "github.com/davecgh/go-spew/spew",
+			"revision": "d8f796af33cc11cb798c1aaeb27a4ebc5099927d",
+			"revisionTime": "2018-08-30T19:11:22Z"
+		},
+		{
+			"checksumSHA1": "a2yC46a1qsJomgY6rb+FkTFiqmE=",
+			"path": "github.com/davecgh/go-spew/spew/testdata",
+			"revision": "d8f796af33cc11cb798c1aaeb27a4ebc5099927d",
+			"revisionTime": "2018-08-30T19:11:22Z"
+		},
+		{
+			"checksumSHA1": "jwoPNwN+mUiYFQPjQa/U3Kli7Ak=",
+			"path": "github.com/kr/pretty",
+			"revision": "73f6ac0b30a98e433b289500d779f50c1a6f0712",
+			"revisionTime": "2018-05-06T08:33:45Z"
+		},
+		{
+			"checksumSHA1": "x9dJv+jQhUFN6R6h4fzPjGLvQLg=",
+			"path": "github.com/kr/text",
+			"revision": "e2ffdb16a802fe2bb95e2e35ff34f0e53aeef34f",
+			"revisionTime": "2018-05-06T08:24:08Z"
+		},
+		{
+			"checksumSHA1": "RZOdTSZN/PgcTqko5LzIAzw+UT4=",
+			"path": "github.com/pmezard/go-difflib/difflib",
+			"revision": "5d4384ee4fb2527b0a1256a821ebfc92f91efefc",
+			"revisionTime": "2018-12-26T10:54:42Z"
+		},
+		{
+			"checksumSHA1": "rHWQmJbEdrSjL6tvkYQ8JSG/XCE=",
+			"path": "github.com/stretchr/testify/assert",
+			"revision": "85f2b59c4459e5bf57488796be8c3667cb8246d6",
+			"revisionTime": "2018-07-16T14:42:29Z"
+		},
+		{
+			"checksumSHA1": "k67OKTaKxIezTUw+OfJ+Ngqbm3Q=",
+			"path": "golang.org/x/text/internal/gen",
+			"revision": "3d0f7978add91030e5e8976ff65ccdd828286cba",
+			"revisionTime": "2019-08-29T15:11:34Z"
+		},
+		{
+			"checksumSHA1": "ag7y2tiDc1Yx4fxBrA/CuwKZptg=",
+			"path": "golang.org/x/text/internal/testtext",
+			"revision": "3d0f7978add91030e5e8976ff65ccdd828286cba",
+			"revisionTime": "2019-08-29T15:11:34Z"
+		},
+		{
+			"checksumSHA1": "077XDBzIUFgsmcIXAkuxn/bi92g=",
+			"path": "golang.org/x/text/transform",
+			"revision": "3d0f7978add91030e5e8976ff65ccdd828286cba",
+			"revisionTime": "2019-08-29T15:11:34Z"
+		},
+		{
+			"checksumSHA1": "SfSQV/Y3/d4ia+BHuKhviRLr0yA=",
+			"path": "golang.org/x/text/unicode/cldr",
+			"revision": "3d0f7978add91030e5e8976ff65ccdd828286cba",
+			"revisionTime": "2019-08-29T15:11:34Z"
+		},
+		{
+			"checksumSHA1": "6YNRM7pNPQIqn7iNx5vixOEp8S0=",
+			"path": "golang.org/x/text/unicode/norm",
+			"revision": "3d0f7978add91030e5e8976ff65ccdd828286cba",
+			"revisionTime": "2019-08-29T15:11:34Z"
+		},
+		{
+			"checksumSHA1": "vgYj71VS5CXqcOn8UkN9hoG68Ic=",
+			"path": "gopkg.in/check.v1",
+			"revision": "41f04d3bba152ddec2103e299fed053415705330",
+			"revisionTime": "2019-09-02T08:05:02Z"
+		},
+		{
+			"checksumSHA1": "xldGnHk44I4mgAwYKfsu7TqBPqM=",
+			"path": "gopkg.in/yaml.v2",
+			"revision": "51d6538a90f86fe93ac480b35f37b2be17fef232",
+			"revisionTime": "2018-11-15T11:05:04Z"
+		}
+	],
+	"rootPath": "github.com/nickrisaro/workshop-ml/knn"
+}
