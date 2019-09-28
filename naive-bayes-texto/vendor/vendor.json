@@ -1,0 +1,13 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "C2O8Hwh/3TpmEBEP9RaPwZ/I7l4=",
+			"path": "github.com/jbrukh/bayesian",
+			"revision": "13a31617141386a7a9a1c0237913022330360ea5",
+			"revisionTime": "2019-02-18T04:38:18Z"
+		}
+	],
+	"rootPath": "github.com/nickrisaro/workshop-ml/naive-bayes"
+}
